@@ -26,7 +26,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/webpalm@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/webpalm@sha256:06c51620c0fe817b488d4e75b524dacf82bd793f92b6fb6940f5d44fc5f96d4a
   platforms: [linux/amd64, linux/arm64]
   command: ["webpalm", "-u", "{url}", "-l", "{level}", "-t", "15"]
   output_format: text
